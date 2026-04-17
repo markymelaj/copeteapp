@@ -25,6 +25,7 @@ export default function OpenGraphImage() {
       >
         <div
           style={{
+            display: 'flex',
             position: 'absolute',
             inset: 32,
             borderRadius: 36,
@@ -47,11 +48,22 @@ export default function OpenGraphImage() {
               alignItems: 'center',
             }}
           >
-            <div style={{ fontSize: 24, letterSpacing: '0.22em', fontWeight: 700 }}>
-              copete<span style={{ color: '#ff8c32' }}>.app</span>
-            </div>
             <div
               style={{
+                display: 'flex',
+                alignItems: 'baseline',
+                fontSize: 24,
+                letterSpacing: '0.22em',
+                fontWeight: 700,
+              }}
+            >
+              <span>copete</span>
+              <span style={{ color: '#ff8c32' }}>.app</span>
+            </div>
+
+            <div
+              style={{
+                display: 'flex',
                 borderRadius: 999,
                 border: '1px solid rgba(255,140,50,0.2)',
                 background: 'rgba(255,140,50,0.12)',
@@ -66,11 +78,34 @@ export default function OpenGraphImage() {
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 28, maxWidth: 900 }}>
-            <div style={{ fontSize: 82, fontWeight: 700, lineHeight: 0.95 }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 28,
+              maxWidth: 900,
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                fontSize: 82,
+                fontWeight: 700,
+                lineHeight: 0.95,
+              }}
+            >
               La noche tiene nuevo punto de encuentro.
             </div>
-            <div style={{ fontSize: 28, lineHeight: 1.5, color: '#b2aa9d', maxWidth: 900 }}>
+
+            <div
+              style={{
+                display: 'flex',
+                fontSize: 28,
+                lineHeight: 1.5,
+                color: '#b2aa9d',
+                maxWidth: 900,
+              }}
+            >
               Estamos llegando para conectar botillerías, delivery, beneficios y experiencias en una plataforma pensada para cómo realmente se mueve la noche en Chile.
             </div>
           </div>
@@ -87,6 +122,7 @@ export default function OpenGraphImage() {
               <div
                 key={item}
                 style={{
+                  display: 'flex',
                   borderRadius: 999,
                   border: '1px solid rgba(255,255,255,0.08)',
                   background: 'rgba(255,255,255,0.03)',
